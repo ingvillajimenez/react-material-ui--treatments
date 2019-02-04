@@ -14,7 +14,7 @@ class Users extends Component {
     }
 
     componentDidMount() {   
-        superagent.get('https://young-wildwood-11812.herokuapp.com/api/v1/users')
+        superagent.get('https://express-mongodb--treatments.herokuapp.com/api/v1/users')
         .then((serverResult) => {
             console.log(serverResult.body.data)
             var allUsers =  serverResult.body.data

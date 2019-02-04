@@ -36,7 +36,7 @@ class LogIn extends Component{
         }
 
         console.log(json)
-        superagent.post('https://young-wildwood-11812.herokuapp.com/api/v1/users')
+        superagent.post('https://express-mongodb--treatments.herokuapp.com/api/v1/users')
         .send(json)
         .then(res => alert('User saved'))
         .catch(e => alert(e))
